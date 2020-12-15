@@ -6,26 +6,37 @@
     <title>Banana Speak</title>
     <link href="styles.css" rel="stylesheet"/>
     <script>
-        console.log("Testing script!");
+        //console.log("Testing script!");
     </script>
 </head>
 <body>
-    <header>
-        <h1>Banana Speak</h1>
+    <header class="container flex-container">
+        <div>
+            <img src="images/minion_alt.jpg"/>
+        </div>
+        <div>
+            <h1>Banana Speak</h1>
+        </div>
     </header>
-    <div class="container">
-        <h3>Translate to Banana! 👇🏽</h3>
+    <div class="flex-container-verticle">
+        <h3 style="margin-left:1rem;">Translate to Banana! 👇🏽</h3>
         <textarea id="inputDiv">
-           Enter text here to translate
         </textarea>
-        <button> Translate </button>
+        <button id="click"> Translate </button>
         <textarea id="outputDiv">
         </textarea>
     </div>
-    <footer>
+    <footer class="container">
+        <p>Here's an app to translate the gibberish minions speak to minion or banana cause we love minions. 
+           Have fun! Or as they would say <strong>kaylay agei</strong>! 
+        </p>
+        <p>Developed using VanillaJS , HTML and CSS by Akshita Saini &#x24B8;</p>
 
     </footer>
-    <script type="text/javascript" src="app.js">
-    </script>
+    <!-- Added at the bottom because the HTML file is compiled from top to bottom and we want our
+    scripts to be added at the end; there are other ways to do this; Reason why this makes sense is: 
+    HTML is the layout, and JS adds the funstioning without the layout there can be no functioning 
+    possibility of errors when the page is loaded, check! -->
+    <script type="text/javascript" src="app.js" ></script>
 </body>
 </html>

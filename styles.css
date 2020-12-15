@@ -1,15 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root{
+    --primary_color:yellow;
+    --secondary-color:blue;
+    --tertiary-colort:cyan;
+    --white:white;
+    --black:black;
+}
+
+body{
+    font-family: 'Architects Daughter', cursive;
+    background-color: var(--primary_color);
+}
+
 .container{
     padding:1rem;
     margin:1rem;
+    text-align:center;
 }
 
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-verticle{
+
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-verticle > div{
+    margin:1px;
+    padding:2px;
+}
+.flex-container > div{
+    margin:1px;
+    padding:2px;
+}
 textarea{
     width:80%;
     display:block;
     padding:1rem;
     margin: 1rem;;
 }
-
+header{
+    background-color: var(--black);
+    color:var(--primary_color)
+}
+footer{
+    background-color: var(--black);
+    color:var(--primary_color);
+}
 button{
     margin:1rem;
     padding:2px;
@@ -17,4 +63,9 @@ button{
 
 h1{
     margin:1rem;
+}
+
+img{
+    height:15rem;
+    width:16rem;
 }
